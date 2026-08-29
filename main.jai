@@ -29,7 +29,7 @@
 main :: () {
    SetCurrentWorkingDirectoryToPathOfRunningExecutable();
    InitializeThreads();
-   window := InitializeVulkanAndWindow();
+   window := InitializeVulkanAndWindow(1024, 1024);
 
    #if true {
 
