@@ -5427,7 +5427,7 @@ glfwGetRequiredInstanceExtensions :: (count: *u32) -> **u8 #foreign libglfw;
 
 #import "Basic"; // For assert
 
-libglfw :: #library "source/build/src/libglfw";
+libglfw :: #library "linux/libglfw";
 
 #run {
     {

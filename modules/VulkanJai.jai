@@ -16,7 +16,7 @@ Thread :: #import "Thread";
 #scope_file
 // i couldn get bindings generator to generate bindings for this function (you need to include vulkan headers and bla bla)
 // so i manually add it here
-libglfw :: #library "glfw/source/build/src/libglfw";
+libglfw :: #library "glfw/linux/libglfw";
 glfwCreateWindowSurface :: (instance: VkInstance, window: *GLFWwindow, allocator: *VkAllocationCallbacks, surface: *VkSurfaceKHR) -> VkResult #foreign libglfw;
 #scope_export
 
